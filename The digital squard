@@ -1,0 +1,20 @@
+Hello i Team Meta, I think due to some reasons or maybe commumáty guidelines violation you've shadow banned my Instagram account but in my knowledge I have not violated any guidelines or maybe did some by mistake so please review my account and fox this Assue I'll definitely read your community guidelines and never make any mistake again, and also I've uploaded a screenshot of my account so it'll be easy for you to review it. Thanksgiving 
+
+
+
+
+https://github.com/Akashpathak0007/The-digital-squard.git
+
+
+
+
+
+
+{
+    "files": [
+        {
+            "path": "index.html",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Rain Animation</title>\n    <link href=\"https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css\" rel=\"stylesheet\">\n    <style>\n        body {\n            background: #0e0e0e;\n            margin: 0;\n            overflow: hidden;\n        }\n        .rain {\n            position: absolute;\n            top: 0;\n            left: 50%;\n            width: 1px;\n            height: 100vh;\n            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));\n            opacity: 0.5;\n            animation: fall linear infinite;\n        }\n        @keyframes fall {\n            0% {\n                transform: translateY(-100vh);\n            }\n            100% {\n                transform: translateY(100vh);\n            }\n        }\n    </style>\n</head>\n<body>\n    <div id=\"rain-container\" class=\"relative w-full h-full overflow-hidden\"></div>\n\n    <script>\n        function createRainDrops(count) {\n            const rainContainer = document.getElementById('rain-container');\n            for (let i = 0; i < count; i++) {\n                const drop = document.createElement('div');\n                drop.className = 'rain';\n                drop.style.left = Math.random() * 100 + 'vw';\n                drop.style.animationDuration = 0.5 + Math.random() * 0.5 + 's';\n                rainContainer.appendChild(drop);\n            }\n        }\n\n        createRainDrops(200);\n    </script>\n</body>\n</html>"
+        }
+    ]
+}
